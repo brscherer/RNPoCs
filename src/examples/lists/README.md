@@ -4,6 +4,10 @@ Uses virtualization to optimize rendering by rendering only the items currently 
 
 Introduces overhead since mounting and unmounting components consume device resources
 
+## Profiling
+
+![FlatList Profiling](flatlist.png)
+
 # FlashList
 
 Uses cell recycling strategy keeping a fixed poool of components instances in memory. When item scrolls out of view, it reuses the same component with new data instead of unmounting and mounting again.
